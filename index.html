@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
@@ -19,10 +28,10 @@
     </header>
 
     <main id="main-content">
-        <section class="home-section sign4in">
+        <section aria-labelledby="hero-title" class="hero">
             <div class="container">
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here under the maintitle. It's a smaller font and the color is lower contrast</p>
+                <h1 id="hero-title" class="hero__title">This website is awesome</h1>
+                <p class="hero-text">This website has some subtext that goes here under the maintitle. It's a smaller font and the color is lower contrast</p>
                 <a href="" class="btn btn--primary">Sign up</a>
             </div>
 
@@ -31,8 +40,9 @@
             </div>
         </section>
 
-        <section class="home-section info">
+        <section aria-labelledby="info-title" class="home-section info">
             <h2>Some random information.</h2>
+            <div class="boxes">
             <div class="container">
                 <div class="quad"></div>
                 <p>this is some subtext under an illustration or image</p>
@@ -49,16 +59,17 @@
                 <div class="quad"></div>
                 <p>this is some subtext under an illustration or image</p>
             </div>
+        </div>
         </section>
 
-        <section class="home-section quote">
+        <section aria-labelledby="quote-title" class="home-section quote">
             <div class="container quote">
             <p class="quote__text"><i>This is an inspiring quote, or a testimonial from a customer.Maybe it's just filling up space, or maybe people will actually read it.Who knows? All I know is that it looks nice</i></p>
         </div>
         <p class="author">-Thor, God of Thunder</p>
         </section>
 
-       <section class="home-section signup">
+       <section aria-labelledby="signup-title" class="home-section signup">
         <div class="container signup">
             <h3 class="action">Call to action! It's time!</h3>
             <p class="signup__text">Sign up for our product by clicking that button right over there!</p>

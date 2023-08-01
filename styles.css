@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-grey: #E5E7EB;
+    --clr-dark: #1F2937;
+    --clr-light: #F9FAF8;
+    --clr-blue: #3882F6;
+    --fw-normal: 400;
+    --fw-bold:700;
+    --fw-extra: 900;
+    --grid: 1fr;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-light);
+    line-height: 1.6;
+    background-color: var(--clr-dark);
+}
+
+h1 {
+    color: var(--clr-light);
+    font-weight: var(--fw-extra);
+    font-size: 48px;
+    line-height: 3.5rem;
+    margin: 0;
+}
+
+header {
+    background-color: var(--clr-dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    padding: 0px;
+    margin: 20px 250px 0 150px;
+}
+
+.logo {
+    font-weight: var(--fw-bold);
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: var(--fw-normal);
+    align-content: center;
+    
+}
+
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    margin: 100px 250px 100px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+    margin: 0;
+    line-height: 1.25rem;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .5rem 1.25em;
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    margin-top: 10px;
+    border-radius: 10px; 
+    width: 135px;  
+    text-align: center;
+}
+
+.btn--primary {
+    background-color: var(--clr-blue);
+    color: var( --clr-light);
+}
+
+.img {
+    background-color: rgb(100, 100, 124);
+    text-align: center;
+    height: 220px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.info {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h2 {
+    
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-weight: var(--fw-bold);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.quad {
+    outline: 4px solid var(--clr-blue);
+    height: 150px;
+    width: 145px;
+    border-radius: 10px;
+    margin: 0;
+}
